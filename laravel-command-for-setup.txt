@@ -1,0 +1,54 @@
+Run command
+
+composer global require "laravel/installer"
+php artisan serve
+php artisan key:generate
+
+
+/**********************************/
+
+
+.env.example file to .env
+
+
+/**********************************/
+
+
+Additional Configuration > config/app.php
+
+>timezone and locale
+>Cache
+>Database
+>Session
+
+
+/**********************************/
+
+
+Web Server Configuration > public/.htaccess
+
+
+/**********************************/
+
+
+Run command
+
+composer install
+npm install
+
+npm install ___plugin___ --save-dev
+
+npm run dev
+npm run watch
+
+
+/**********************************/
+
+
+Run command for DB
+
+php artisan migrate:fresh
+composer dump-autoload
+php artisan db:seed
+
+
