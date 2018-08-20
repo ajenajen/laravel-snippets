@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Flex Example</title>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+	<style type="text/css">
+		.d-flex {
+		 background-color: #ddd; 
+		}
+		.d-flex.height {
+		 height: 420px;
+		}
+		.flex-g{
+		  height: 200px;
+		}
+		.flex-items {
+		  height: 100px;
+		}
+		.flex-item-A {
+		  background-color: lightpink;
+		  width: 200px;
+		}
+		.flex-item-B {
+		  background-color: lightcyan;
+		  width: 200px;
+		}
+		.flex-item-C {
+		  background-color: lightseagreen;
+		  width: 200px;
+		}
+	</style>
+</head>
+<body>
+
+<div style="padding: 30px 0; border-bottom: 2px solid #ddd;">
+	<pre class="mb-2">
+	.d-flex
+	.d-inline-flex
+	.d-sm-flex
+	.d-sm-inline-flex
+	.d-md-flex
+	.d-md-inline-flex
+	.d-lg-flex
+	.d-lg-inline-flex
+	.d-xl-flex
+	.d-xl-inline-flex
+	</pre>
+	<div class="container">
+		<h3 class="mt-4">Flex (d-flex)</h3>
+		<div class="d-flex">
+			<div class="flex-item-A">
+				Item A
+			</div>
+			<div class="flex-item-B">
+				Item B
+			</div>
+			<div class="flex-item-C">
+				Item C
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<h3 class="mt-4"> Inline Flex (d-inline-flex)</h3>
+		<div class="d-inline-flex">
+			<div class="flex-item-A">
+				Flex A
+			</div>
+		</div>
+		<div class="d-inline-flex">
+			<div class="flex-item-B">
+				Flex B
+			</div>
+		</div>
+	</div>
+</div>
+<div style="padding: 30px 0; border-bottom: 2px solid #ddd;">
+	<pre class="mb-2">
+	<h3 class="pl-5">Flex Direction class ที่ใช้ได้</h3>
+	.flex-row
+	.flex-row-reverse
+	.flex-column
+	.flex-column-reverse
+	.flex-sm-row
+	.flex-sm-row-reverse
+	.flex-sm-column
+	.flex-sm-column-reverse
+	.flex-md-row
+	.flex-md-row-reverse
+	.flex-md-column
+	.flex-md-column-reverse
+	.flex-lg-row
+	.flex-lg-row-reverse
+	.flex-lg-column
+	.flex-lg-column-reverse
+	.flex-xl-row
+	.flex-xl-row-reverse
+	.flex-xl-column
+	.flex-xl-column-reverse
+	</pre>
+	<div class="container">
+	  <h3 class="mt-4">flex-row</h3>
+	   <div class="d-flex flex-row">
+	     <div class="flex-item-A">
+	       Item A
+	     </div>
+	     <div class="flex-item-B">
+	       Item B
+	     </div>
+	     <div class="flex-item-C">
+	       Item C
+	     </div>
+	   </div>
+	   <h3 class="mt-4">
+	     flex-row-reverse
+	   </h3>
+	   <div class="d-flex flex-row-reverse">
+	     <div class="flex-item-A">
+	       Item A
+	     </div>
+	     <div class="flex-item-B">
+	       Item B
+	     </div>
+	     <div class="flex-item-C">
+	       Item C
+	     </div>
+	   </div>
+	   <h3 class="mt-4">
+	     flex-column
+	   </h3>
+	   <div class="d-flex flex-column">
+	     <div class="flex-item-A">
+	       Item A
+	     </div>
+	     <div class="flex-item-B">
+	       Item B
+	     </div>
+	     <div class="flex-item-C">
+	       Item C
+	     </div>
+	   </div>
+	   <h3 class="mt-4">
+	     flex-column-reverse
+	   </h3>
+	   <div class="d-flex flex-column-reverse">
+	     <div class="flex-item-A">
+	       Item A
+	     </div>
+	     <div class="flex-item-B">
+	       Item B
+	     </div>
+	     <div class="flex-item-C">
+	       Item C
+	     </div>
+	   </div>
+	 </div>
+
+</div>
+<div style="padding: 30px 0; border-bottom: 2px solid #ddd;">
+	<pre class="mb-2">
+		<h3 class="pl-5">justify-content-(start, end, center, between, around)</h3>
+	.justify-content-start
+	.justify-content-end
+	.justify-content-center
+	.justify-content-between
+	.justify-content-around
+	.justify-content-sm-start
+	.justify-content-sm-end
+	.justify-content-sm-center
+	.justify-content-sm-between
+	.justify-content-sm-around
+	.justify-content-md-start
+	.justify-content-md-end
+	.justify-content-md-center
+	.justify-content-md-between
+	.justify-content-md-around
+	.justify-content-lg-start
+	.justify-content-lg-end
+	.justify-content-lg-center
+	.justify-content-lg-between
+	.justify-content-lg-around
+	.justify-content-xl-start
+	.justify-content-xl-end
+	.justify-content-xl-center
+	.justify-content-xl-between
+	.justify-content-xl-around
+	</pre>
+	<div class="container">
+	  <h3>Justify content start</h3>
+	   <div class="d-flex justify-content-start">
+	     <div class="flex-g flex-item-A">
+	       Item A
+	     </div>
+	     <div class="flex-items flex-item-B">
+	       Item B
+	     </div>
+	     <div class="flex-items flex-item-C">
+	       Item C
+	     </div>
+	   </div>
+	   <h3>Justify content end</h3>
+	   <div class="d-flex justify-content-end">
+	     <div class="flex-items flex-item-A">
+	       Item A
+	     </div>
+	     <div class="flex-items flex-item-B">
+	       Item B
+	     </div>
+	     <div class="flex-items flex-item-C">
+	       Item C
+	     </div>
+	   </div>
+	   <h3>Justify content center</h3>
+	   <div class="d-flex justify-content-center">
+	     <div class="flex-items flex-item-A">
+	       Item A
+	     </div>
+	     <div class="flex-items flex-item-B">
+	       Item B
+	     </div>
+	     <div class="flex-items flex-item-C">
+	       Item C
+	     </div>
+	   </div>
+	   <h3>Justify content between</h3>
+	   <div class="d-flex justify-content-between">
+	     <div class="flex-items flex-item-A">
+	       Item A
+	     </div>
+	     <div class="flex-items flex-item-B">
+	       Item B
+	     </div>
+	     <div class="flex-items flex-item-C">
+	       Item C
+	     </div>
+	   </div>
+	   <h3>Justify content around</h3>
+	   <div class="d-flex justify-content-around">
+	     <div class="flex-items flex-item-A">
+	       Item A
+	     </div>
+	     <div class="flex-items flex-item-B">
+	       Item B
+	     </div>
+	     <div class="flex-items flex-item-C">
+	       Item C
+	     </div>
+	   </div>
+	 </div>
+
+</div>
+<div style="padding: 30px 0; border-bottom: 2px solid #ddd;">
+	<pre class="mb-2">
+		<h3 class="pl-5">align-content-(start, end, center, between, around)</h3>
+	.align-content-start
+	.align-content-end
+	.align-content-center
+	.align-content-around
+	.align-content-stretch
+	.align-content-sm-start
+	.align-content-sm-end
+	.align-content-sm-center
+	.align-content-sm-around
+	.align-content-sm-stretch
+	.align-content-md-start
+	.align-content-md-end
+	.align-content-md-center
+	.align-content-md-around
+	.align-content-md-stretch
+	.align-content-lg-start
+	.align-content-lg-end
+	.align-content-lg-center
+	.align-content-lg-around
+	.align-content-lg-stretch
+	.align-content-xl-start
+	.align-content-xl-end
+	.align-content-xl-center
+	.align-content-xl-around
+	.align-content-xl-stretch
+	</pre>
+	<div class="conntainer">
+	  <h3>Align content start</h3>
+	  <div class="d-flex height align-content-start flex-wrap">
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	  </div>
+	</div>
+	<div class="conntainer">
+	  <h3>Align content end</h3>
+	  <div class="d-flex height align-content-end flex-wrap">
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	  </div>
+	</div>
+	<div class="conntainer">
+	  <h3>Align content center</h3>
+	  <div class="d-flex height align-content-center flex-wrap">
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	  </div>
+	</div>
+	<div class="conntainer">
+	  <h3>Align content between</h3>
+	  <div class="d-flex height align-content-between flex-wrap">
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	  </div>
+	</div>
+	<div class="conntainer">
+	  <h3>Align content around  </h3>
+	  <div class="d-flex height align-content-around   flex-wrap">
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item A
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item B
+	    </div>
+	    <div class="flex-items flex-item-A">
+	      Item C
+	    </div>
+	  </div>
+	</div>
+</div>
+<div style="padding: 30px 0; border-bottom: 2px solid #ddd;">
+	<a href="https://medium.com/pirsquare/css-bootstrap-flexbox-%E0%B8%A1%E0%B8%B1%E0%B8%99%E0%B8%94%E0%B8%B5%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%87-%E0%B9%86-%E0%B8%99%E0%B8%B0-7339e65e34f7">Other</a>
+</div>
+
+</body>
+</html>
